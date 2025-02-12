@@ -1,6 +1,5 @@
 FROM ubuntu
-RUN apt update -y #to update the server
-
+RUN apt update 
 
 RUN apt install apache2 php php-mysql php-common wget mysql-server tar -y
 RUN apt autoremove -y && apt autoclean -y
